@@ -1,0 +1,50 @@
+.navBar, .navBar ul, .show-nav,.Buttons{
+    display: flex;
+}
+.logo{color:white; margin-left: 3vw;}
+.navBar{font-size: 1.5rem; padding: 1vw;}
+a{color:rgba(255, 255, 255, 0.693); text-decoration: none; }
+.navBar{
+    position: 'fixed';
+    top: 0;
+    justify-content: space-between;
+    background-color:rgba(78, 2, 13, 0.294);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.navBar ul{gap: 5vw;}
+.Buttons{gap: 1vw;}
+.Buttons>button{ padding: 0.5vw;}
+
+.nav-links {
+    transition: transform 0.5s;
+    transform: translateX(100%);
+  }
+  
+  .show-nav {
+    transform: translateX(0);
+  }
+
+  ul{
+    list-style: none;
+  }
+  
+  .burger {
+    cursor: pointer;
+  }
+  
+  .burger div {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 5px;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .nav-links {
+      transform: translateX(0);
+    }
+  
+    .burger {
+      display: none;
+    }
+  }

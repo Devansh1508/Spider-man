@@ -1,0 +1,44 @@
+.midContent > * {
+  color: white;
+}
+
+/* h2 {
+  font-weight: bold;
+  color: transparent;
+  text-shadow: 
+      -1px -1px  red,
+      1px -1px 10px red,
+      -1px 1px 10px red,
+      1px 1px 10p red;
+} */
+
+/* should be at the top image  */
+.midContent {
+  z-index: 2;
+  top: 20vh;
+  height: 50vh;
+  width: 80vw;
+  position: absolute;
+  left: 10vw;
+}
+.content {
+  z-index: -1;
+}
+.actors {
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10vh;
+  width: inherit;
+}
+.outSpider{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.spiderMan{
+    margin: 2vw 0vw 10vw 0vw;
+
+    font-size: 10rem;
+}
